@@ -1,0 +1,1 @@
+python3.7 train.py --data_path comments_trustpilot_v2.csv --validation_split 0.1 --label_column rating --text_column comment --max_length 500 --dropout_input 0 --model_name trustpilot --balance 1
