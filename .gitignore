@@ -1,2 +1,3 @@
 *.csv
 company_urls_en
+*.pth
