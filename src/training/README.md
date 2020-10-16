@@ -4,19 +4,19 @@
 模型架構則出於這則<a href="https://arxiv.org/pdf/1509.01626.pdf">論文</a>
 
 ##需求
+
 - PyTorch >=0.4.1
 - Tensorflow >=2.0.0 (optional, useful for model monitoring)
 - TensorboardX >=1.8 (optional, useful for model monitoring) 
 
 ##訓練
 
-
-將爬蟲下載完的資料置入於 `src/scraping/scrapy/comments_trustpilot.csv`
+爬蟲下載完的資料放置於 `src/scraping/trustpilot/comments_trustpilot_v2.csv`
 
 ```shell
 cd src/training/
 
-python train.py --data_path ../src/scraping/scrapy/comments_trustpilot.csv \
+python train.py --data_path ../src/scraping/trustpilot/comments_trustpilot_v2.csv \
                 --validation_split 0.1 \
                 --label_column rating \
                 --text_column comment \
