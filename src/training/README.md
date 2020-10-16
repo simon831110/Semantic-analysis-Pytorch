@@ -27,3 +27,13 @@ python train.py --data_path ../src/scraping/trustpilot/comments_trustpilot_v2.cs
                 --model_name trustpilot \
                 --balance 1
 ```
+## 模型觀察
+
+
+```shell
+tensorboard --logdir=src/training/logs/ --port=6006
+```
+
+## 使用模型
+
+當你結束訓練之後，模型儲存於 `src/training/models`，選擇最好的權重並重新命名為**model.pth**並將其複製到`src/api/ml/checkpoints/`
