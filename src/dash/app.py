@@ -168,16 +168,6 @@ home_layout = html.Div(
             className="mt-2"
 
         ),
-        html.P(
-            [
-                html.A("BESBES", href="https://ahmedbesbes.com", target="_blank"),
-                " / ",
-                html.A("DEBBICHE", href="https://marwandebbiche.com",
-                       target="_blank"),
-                " - 2019"
-            ],
-            className="mt-3 mb-2 text-muted"
-        ),
     ],
     className="form-review",
 )
