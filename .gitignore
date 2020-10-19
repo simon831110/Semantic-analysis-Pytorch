@@ -1,3 +1,2 @@
-*.csv
-company_urls_en
-*.pth
+comments_trustpilot_v2.csv
+consolidate_company_urls.csv
