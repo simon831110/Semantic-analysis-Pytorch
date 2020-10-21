@@ -26,7 +26,7 @@ model = CharacterLevelCNN()
 if model_name not in os.listdir('./ml/models/'):
     print(f'downloading the trained model {model_name}')
     wget.download(
-        "https://github.com/ahmedbesbes/character-based-cnn/releases/download/model_en_tp_amazon/model_tp_amazon_1014.pth",
+        "https://github.com/simon831110/Semantic-analysis-Pytorch/tree/main/src/api/ml/models/model_en.pth",
         out=model_path
     )
 else:
@@ -45,8 +45,7 @@ print('PyTorch model loaded !')
 @api.route('/predict', methods=['POST'])
 def predict_rating():
     '''
-    Endpoint to predict the rating using the
-    review's text data.
+    對於評論進行分數預測
     '''
     if request.method == 'POST':
         #若評論沒東西
